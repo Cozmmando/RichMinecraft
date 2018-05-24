@@ -25,11 +25,11 @@ public class PresenceManager {
         this.config = config;
 
         loadingGame.state = "Loading the Game";
-        loadingGame.largeImageKey = "state-default";
+        loadingGame.largeImageKey = "state-loading";
         loadingGame.largeImageText = "CozRPG 2";
 
         mainMenu.state = "In the Main Menu";
-        mainMenu.largeImageKey = "state-default";
+        mainMenu.largeImageKey = "state-menu";
         mainMenu.largeImageText = "CozRPG 2";
 
         SmallDataDisplay smallData = dataManager.getSmallDataDisplays().get(this.config.displayData.smallDataUid);
@@ -65,10 +65,10 @@ public class PresenceManager {
             inGame.largeImageKey = server.key;
             inGame.largeImageText = "IP: " + server.name;
         } else if (this.config.displayData.hideUnknownIps) {
-            inGame.largeImageKey = "state-unknown-server";
+            inGame.largeImageKey = "state-multiplayer";
             inGame.largeImageText = "Unknown Server";
         } else {
-            inGame.largeImageKey = "state-unknown-server";
+            inGame.largeImageKey = "state-multiplayer";
             inGame.largeImageText = "IP: " + ip;
         }
 
@@ -92,7 +92,7 @@ public class PresenceManager {
         inGame.state = "In Singleplayer";
         inGame.details = "IGN: " + MiscUtil.getIGN();
         inGame.startTimestamp = epochSecond();
-        inGame.largeImageKey = "state-default";
+        inGame.largeImageKey = "state-singleplayer";
         inGame.largeImageText = "World: " + world;
         inGame.partyId = "";
         inGame.partySize = 0;
