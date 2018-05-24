@@ -38,8 +38,8 @@ public class PresenceManager {
             return;
         }
 
-        loadingGame.smallImageKey = "default";
-        loadingGame.smallImageText = "CozRPG 2";
+        loadingGame.smallImageKey = smallData.key;
+        loadingGame.smallImageText = smallData.name;
 
         mainMenu.smallImageKey = smallData.key;
         mainMenu.smallImageText = smallData.name;
