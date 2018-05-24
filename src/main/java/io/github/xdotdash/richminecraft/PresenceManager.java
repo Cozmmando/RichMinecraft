@@ -26,11 +26,11 @@ public class PresenceManager {
 
         loadingGame.state = "Loading the Game";
         loadingGame.largeImageKey = "state-default";
-        loadingGame.largeImageText = "Minecraft";
+        loadingGame.largeImageText = "CozRPG 2";
 
         mainMenu.state = "In the Main Menu";
         mainMenu.largeImageKey = "state-default";
-        mainMenu.largeImageText = "Minecraft";
+        mainMenu.largeImageText = "CozRPG 2";
 
         SmallDataDisplay smallData = dataManager.getSmallDataDisplays().get(this.config.displayData.smallDataUid);
 
